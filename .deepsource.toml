@@ -1,10 +1,31 @@
 version = 1
 
 [[analyzers]]
-name = "shell"
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = [
+    "react",
+    "vue",
+    "ember",
+    "meteor",
+    "angularjs",
+    "angular"
+  ]
+  environment = [
+    "nodejs",
+    "jquery",
+    "mongo",
+    "browser",
+    "cypress",
+    "jest",
+    "vitest",
+    "mocha",
+    "jasmine"
+  ]
 
 [[analyzers]]
-name = "javascript"
+name = "shell"
 
 [[analyzers]]
 name = "python"
